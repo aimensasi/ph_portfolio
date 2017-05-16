@@ -1,0 +1,11 @@
+.hero{
+	background-color: $primary-color;
+}
+
+.navbar{
+	width: 100%;
+	background-color: $light-color;
+	.navbar-collapse{
+		@include center-content();
+	}
+}
