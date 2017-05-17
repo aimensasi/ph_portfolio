@@ -1,11 +1,28 @@
-.hero{
-	background-color: $primary-color;
-}
 
 .navbar{
 	width: 100%;
 	background-color: $light-color;
-	.navbar-collapse{
-		@include center-content();
+	.navbar-nav{
+		margin-left: auto;
+		margin-right: auto;
+		.nav-item{
+			margin: 10px 10px;
+			border-right: 1px solid $secondary-color;
+			padding-right: 25px;
+			padding-left: 25px;
+			.nav-link{
+				color: $secondary-color;
+				padding: 0;
+				font-family: $secondary-font;
+				text-transform: capitalize;
+				transition: opacity .6s;
+				&:hover{
+					opacity: 0.4;
+				}
+			}
+		}
+		.nav-item-last{
+			border: none;
+		}
 	}
 }

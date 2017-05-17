@@ -1,0 +1,71 @@
+.hero{
+	background-color: $primary-color;
+
+	.hero-body{
+		@include section-spacing(80px, 100px);
+		.logo,
+		.intro{
+			@include center-content();
+			color: $secondary-color;
+		}
+		.logo{
+			font-size: 2.2rem;
+			position: relative;
+			margin-top: 200px;
+			span.intial{
+				letter-spacing: 2px;
+			}
+			span.pin,
+			span.intial{
+				font-family: monaco;
+			}
+			span.tag{
+				font-family: $secondary-font;				
+			}
+			span.pin{
+				color: $c-color;
+			}
+			&::after{
+				content: '';
+				position: absolute;
+				background-color: $secondary-color;
+				height: 2px;
+				width: 245px;
+				bottom: -10px;
+				left: -50px;
+			}
+		}
+		.intro{
+			font-family: $primary-font;
+			font-weight: 100;
+			margin-top: 30px;
+			width: 65%;
+			text-align: center;
+		}
+	}
+}
+
+.hero{
+	.hero-footer{
+		background-color: $light-color;
+		width: 100%;
+		.fa{
+			color: $secondary-color;
+			padding: 20px 20px;
+			font-size: 1.8rem;
+		}
+		.link-to{
+			cursor: pointer;
+			transition: opacity 0.6s;
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+		.link-to-in{
+			margin-left: auto;
+		}
+		.link-to-fb{
+			margin-right: auto;
+		}
+	}	
+}
