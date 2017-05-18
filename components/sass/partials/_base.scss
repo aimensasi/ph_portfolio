@@ -76,3 +76,42 @@ and (orientation : portrait) {
 		display: none !important;
 	}	
 }
+
+.title{
+	@include center-content();
+	text-align: center;
+	color: $c-color;
+	font-family: $primary-font;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 20px;
+	font-size: 2.4rem;
+	position: relative;
+	&::after,
+	&::before{
+		content: "";
+		position: absolute;
+		height: 2px;
+		bottom: -15px;
+		left: 0;
+	}
+	&::after{
+		background-color: $c-color;
+		width: 55px;
+		left: 45px;
+	}
+	&::before{
+		background-color: #eee;	
+		width: 150px;
+	}
+}
+
+.leads{
+	@include center-content();
+	text-align: center;
+	font-family: $primary-font;
+	font-weight: 100;
+	font-size: 1rem;
+	width: 70%;
+	margin-top: 30px;
+}

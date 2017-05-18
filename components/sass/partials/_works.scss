@@ -1,0 +1,77 @@
+.work{
+	@include imageCover('../images/circle_bg.png');
+	@include section-spacing();
+	background-color: $primary-color;
+
+	.title{
+		color: $secondary-color;
+		&::after{
+			background-color: $secondary-color;
+			width: 34px;
+			left: 38px;
+		}
+		&::before{
+			background-color: #7d7d7d;
+			width: 110px;
+		}
+	}
+	.leads{
+		color: $secondary-color;
+	}
+}
+
+
+.work .work-row{
+	.photo{
+		.card{
+			height: 450px;
+			width: 390px;
+			border: none;
+			background-position: center top;
+			background-size: cover;
+			transform: scale(0.9);
+			cursor: pointer;
+			transition: transform 0.5s, box-shadow 0.5s;
+			box-shadow: 0px 0px 10px 0px transparent;
+			&:hover{
+				transform: scale(0.91);
+				box-shadow: 0px 0px 10px 0px #5a5a5a;
+			}
+			.card-block{
+				background-color: rgba(70, 74, 76, 0.7);
+				display: flex;
+				.name{
+					margin-top: auto;
+					color: $secondary-color;
+					font-family: $primary-font;
+					font-weight: 100;
+					font-size: 1.5rem;
+					text-transform: capitalize;
+				}
+				.leads{
+					color: $secondary-color;
+					font-family: $primary-font;
+					width: 100%;
+					text-align: left;
+					font-weight: 100;
+					font-size: 0.9rem;
+					margin-top: 8px;
+					font-weight: 400;
+				}
+				.btn-github{
+					color: #fff;
+					font-family: sans-serif;
+					font-size: 0.9rem;
+					margin-top: 8px;
+					margin-bottom: 15px;
+					font-weight: 400;
+					transition: color 0.5s;
+					&:hover{
+						text-decoration: none;
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+}
