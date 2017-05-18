@@ -45,23 +45,98 @@
 .resume{
 	.resume-list{
 		@include center-content();
-		width: 60%;
+		@include section-spacing(20px);
+		width: 70%;
 		margin-top: 30px;
 		height: 600px;
 		overflow-y: scroll;
 		.list-item{
 			.title-small{
+				@include center-text();
 				background-color: $c-color;
 				color: $secondary-color;
-				margin-left: auto;
-				margin-right: auto;
 				padding: 8px 15px;
-				font-size: 1.3rem;
+				font-size: 1.1rem;
 				font-family: $primary-font;
 				font-weight: 100;
 				border-radius: 5px;
+				margin-bottom: 20px;
 			}
 		}
+	}
+}
+
+.resume .resume-list{
+	.em-list{
+		list-style: none;
+		padding-left: 0;
+		.em-title{
+			@include center-text();
+			margin-bottom: 40px;
+			margin-top: 20px;
+			color: $c-color;
+			font-family: $primary-font;
+			font-weight: 100;
+			font-size: 1.18rem;
+			letter-spacing: 1px;
+			position: relative;
+			&::after,
+			&::before{
+				content: "";
+				position: absolute;
+			}
+			&::after{
+				height: 20px;
+				width: 20px;
+				bottom: -20px;
+				left: 43px;
+				border: 1px solid #eee;
+				border-top: none;
+				border-left: none;
+				background-color: $secondary-color;
+				transform: rotate(45deg);
+			}
+			&::before{
+				background-color: #eee;
+				height: 1px;
+				width: 220px;
+				bottom: -12px;
+				left: -52px;
+			}
+		}
+		.em-position,
+		.em-link,
+		.em-desc{
+			@include center-text();
+			font-family: $primary-font;
+			font-weight: 100;
+		}
+		.em-position{
+			font-size: 1.4rem;
+		}
+		.em-link{
+			font-size: 1.1rem;
+			color: #5490ff;
+		}
+		.em-desc{
+			font-size: 0.95rem;
+			padding: 20px;
+			text-align: center;
+		}
+	}
+
+	.skills-list{
+		flex-wrap: wrap;
+		margin-top: 20px;
+		.skill-item{
+			@include center-text();
+			padding: 5px 20px;
+			list-style: none;
+			color: $secondary-color;
+			font-family: $primary-font;
+			font-weight: 100;
+			border-radius: 4px;
+		}		
 	}
 }
 

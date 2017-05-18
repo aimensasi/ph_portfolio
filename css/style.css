@@ -54,6 +54,30 @@ body {
   display: none;
 }
 
+.c-1 {
+  background-color: #a0d468;
+}
+
+.c-2 {
+  background-color: #5d9cec;
+}
+
+.c-3 {
+  background-color: #fc6e51;
+}
+
+.c-4 {
+  background-color: #ac92ec;
+}
+
+.c-5 {
+  background-color: #656d78;
+}
+
+.c-6 {
+  background-color: #FF5A5F;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   .sm-only {
     display: initial;
@@ -221,21 +245,97 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  width: 70%;
   margin-top: 30px;
   height: 600px;
   overflow-y: scroll;
 }
 .resume .resume-list .list-item .title-small {
-  background-color: #ed5565;
-  color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ed5565;
+  color: #FFFFFF;
   padding: 8px 15px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-list .em-list {
+  list-style: none;
+  padding-left: 0;
+}
+.resume .resume-list .em-list .em-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: #ed5565;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.18rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+.resume .resume-list .em-list .em-title::after, .resume .resume-list .em-list .em-title::before {
+  content: "";
+  position: absolute;
+}
+.resume .resume-list .em-list .em-title::after {
+  height: 20px;
+  width: 20px;
+  bottom: -20px;
+  left: 43px;
+  border: 1px solid #eee;
+  border-top: none;
+  border-left: none;
+  background-color: #FFFFFF;
+  transform: rotate(45deg);
+}
+.resume .resume-list .em-list .em-title::before {
+  background-color: #eee;
+  height: 1px;
+  width: 220px;
+  bottom: -12px;
+  left: -52px;
+}
+.resume .resume-list .em-list .em-position,
+.resume .resume-list .em-list .em-link,
+.resume .resume-list .em-list .em-desc {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.resume .resume-list .em-list .em-position {
+  font-size: 1.4rem;
+}
+.resume .resume-list .em-list .em-link {
+  font-size: 1.1rem;
+  color: #5490ff;
+}
+.resume .resume-list .em-list .em-desc {
+  font-size: 0.95rem;
+  padding: 20px;
+  text-align: center;
+}
+.resume .resume-list .skills-list {
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.resume .resume-list .skills-list .skill-item {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 20px;
+  list-style: none;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  border-radius: 4px;
 }
 
 .resume-list::-webkit-scrollbar {

@@ -46,6 +46,25 @@ body{
 	display: none;
 }
 
+.c-1{
+	background-color: $c-1;
+}
+.c-2{
+	background-color: $c-2;
+}
+.c-3{
+	background-color: $c-3;
+}
+.c-4{
+	background-color: $c-4;
+}
+.c-5{
+	background-color: $c-5;
+}
+.c-6{
+	background-color: $c-6;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px)
