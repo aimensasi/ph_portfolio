@@ -1,0 +1,47 @@
+.contact{
+	@include imageCover('../images/circle_bg.png');
+	@include section-spacing();
+	.title{
+		&::after{
+			width: 50px;
+			left: 57px;
+		}
+		&::before{
+			width: 170px;
+		}
+	}
+
+	.contact-form{
+		width: 55%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		label{
+			font-family: $primary-font;
+			font-weight: 100;
+			color: $primary-color;
+		}
+		.form-control:not(.txt-area){
+			height: 45px;
+			border-radius: 0;
+		}
+		.txt-area{
+			resize: none;
+			border-radius: 0;
+			// height: 140px;
+		}
+		.btn-submit{
+			@include center-content();
+			background-color: $primary-color;
+			color: $secondary-color;
+			border-radius: 2px;
+			margin-top: 40px;
+		}
+	}
+}
+
+
+
+
+
+

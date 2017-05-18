@@ -1,7 +1,7 @@
 .work{
 	@include imageCover('../images/circle_bg.png');
 	@include section-spacing();
-	background-color: $primary-color;
+	background-color: $lighter;
 
 	.title{
 		color: $secondary-color;

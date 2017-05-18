@@ -45,27 +45,3 @@
 	}
 }
 
-.hero{
-	.hero-footer{
-		background-color: $light-color;
-		width: 100%;
-		.fa{
-			color: $secondary-color;
-			padding: 20px 20px;
-			font-size: 1.8rem;
-		}
-		.link-to{
-			cursor: pointer;
-			transition: opacity 0.6s;
-			&:hover{
-				opacity: 0.6;
-			}
-		}
-		.link-to-in{
-			margin-left: auto;
-		}
-		.link-to-fb{
-			margin-right: auto;
-		}
-	}	
-}
