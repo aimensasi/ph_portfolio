@@ -30,6 +30,7 @@
 		border-radius: 50%;
 		background-color: $light-color;
 		position: relative;
+		transition: opacity 0.5s;
 		&::after{
 			content: "";
 			position: absolute;
@@ -41,6 +42,9 @@
 			border-right: none;
 			top: 28px;
 			left: 20px;
+		}
+		&:hover{
+			opacity: 0.6;
 		}
 	}
 }

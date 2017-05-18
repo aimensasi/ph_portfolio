@@ -33,7 +33,7 @@
 		padding-left: 0;
 		.em-title{
 			@include center-text();
-			margin-bottom: 40px;
+			margin-bottom: 50px;
 			margin-top: 20px;
 			color: $c-color;
 			font-family: $primary-font;
@@ -49,7 +49,7 @@
 			&::after{
 				height: 20px;
 				width: 20px;
-				bottom: -20px;
+				bottom: -29px;
 				left: 43px;
 				border: 1px solid #eee;
 				border-top: none;
@@ -61,7 +61,7 @@
 				background-color: #eee;
 				height: 1px;
 				width: 220px;
-				bottom: -12px;
+				bottom: -19px;
 				left: -52px;
 			}
 		}
@@ -78,6 +78,11 @@
 		.em-link{
 			font-size: 1.1rem;
 			color: $blue;
+			text-decoration: none;
+			transition: opacity 0.5s;
+			&:hover{
+				opacity: 0.7;
+			}
 		}
 		.em-desc{
 			font-size: 0.95rem;
@@ -90,7 +95,9 @@
 		flex-wrap: wrap;
 		margin-top: 20px;
 		.skill-item{
-			@include center-text();
+			text-align: center;
+			margin-right: 20px;
+			margin-bottom: 20px;
 			padding: 5px 20px;
 			list-style: none;
 			color: $secondary-color;
